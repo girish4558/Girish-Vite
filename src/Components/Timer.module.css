@@ -1,0 +1,33 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, violet, #010135, blue, green, yellow, Orange, red );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.container{
+    margin: 160px auto;
+    background: aqua;
+    text-align: center;
+    padding: 100px 200px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px red;
+}
+
+button{
+    margin: 40px 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 2px solid yellow;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    font-size: 40px;
+    font-weight: 500;
+}
