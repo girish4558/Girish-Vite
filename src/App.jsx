@@ -19,6 +19,8 @@ import First from './Contexts/First'
 import ContextTheamButton from './Contexts/ContextTheamButton'
 import MultiContex from './Contexts/MultiContex'
 import MultiSelectCheckbox from './Components/MultiSelectCheckbox'
+import UsReducerCount from './Components/UsReducerCount'
+import FormReducer from './Components/FormReducer'
 
 export const Pass = createContext()
 export default function App() {
@@ -30,7 +32,9 @@ export default function App() {
   const age = 30
   return (
     <div>
-      <CountUseReducer/>
+      
+      {/* <FormReducer/>
+      <UsReducerCount/> */}
       {/* <MultiSelectCheckbox/> */}
       {/* <Pass.Provider value={{mode,setMode,data}}>
         
