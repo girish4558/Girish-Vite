@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import Greatings from './Greatings'
 import Props from './Props'
 import Conditional from './Components/Conditional'
@@ -14,17 +14,38 @@ import UseEffecthook from './Components/UseEffecthook'
 import UseEffectTimer from './Components/UseEffectTimer'
 import GetAPIData from './Components/GetAPIData'
 import UseRef from './Components/UseRef'
+import AddImage from './Components/AddImage'
+import First from './Contexts/First'
+import ContextTheamButton from './Contexts/ContextTheamButton'
+import MultiContex from './Contexts/MultiContex'
+import MultiSelectCheckbox from './Components/MultiSelectCheckbox'
 
+export const Pass = createContext()
 export default function App() {
+  
+  const [mode, setMode]= useState("light")
+  const data = {name : "Gireesh kumar"}
 
   const name = "Girish kumar"
   const age = 30
   return (
-
     <div>
-
+      <CountUseReducer/>
+      {/* <MultiSelectCheckbox/> */}
+      {/* <Pass.Provider value={{mode,setMode,data}}>
+        
+        <MultiContex/>
+      </Pass.Provider> */}
+      {/* <h2 style={{textAlign:"center"}}>UseContext</h2>
+      <div style={{border: "2px solid black", padding:"30px", textAlign: "center"}}>
+        App Component
+        <Pass.Provider value={name}>
+          <First/>
+        </Pass.Provider>
+      </div> */}
+      {/*<AddImage/>
       <UseRef/>
-      {/*<GetAPIData/>
+      <GetAPIData/>
       <UseEffectTimer/>
       <UseEffecthook/>
       <ListRendering/>

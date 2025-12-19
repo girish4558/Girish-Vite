@@ -68,15 +68,80 @@ button:focus-visible {
 } */
 
 
-.Image-con{
+/* .Image-con{
   height: 400px;
   width: 400px;
   background-color: aqua;
   cursor: pointer;
-}
+} */
 
-.image{
+/* .image{
   height: 400px;
   width: 400px;
   cursor: pointer;
+} */
+
+/* 
+  //Add Image Css
+
+.add-container{
+  width: 800px;
+  height: 80vh;
+  border: 2px solid black;
+  text-align: center;
+  margin: 70px auto;
+  background: #7aede8;
+  border-radius: 40px;
+}
+
+.img-container{
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin: 50px auto;
+  cursor: pointer;
+  background-color: #bfd3d3;
+  border-radius: 30px;
+}
+
+button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 2px solid yellow;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h3{
+  padding-top: 150px;
+}
+
+.Img{
+  border-radius: 32px;
+  display: block;
+  height: 380px;
+  width: 380px;
+  border: 2px solid black;
+  margin: 50px auto;
+  cursor: pointer;
+} */
+
+
+.light{
+  background-color: lightcyan;
+  color: black;
+  padding: 100px;
+  font-size: 20px;
+
+}
+.black{
+  background-color: black;
+  color: #fff;
+  padding: 100px;
+  font-size: 20px;
+}
+
+h1{
+  margin: auto;
 }
