@@ -21,6 +21,15 @@ import MultiContex from './Contexts/MultiContex'
 import MultiSelectCheckbox from './Components/MultiSelectCheckbox'
 import UsReducerCount from './Components/UsReducerCount'
 import FormReducer from './Components/FormReducer'
+import UseCallBack from './Components/UseCallBack'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import About from './Routing/About'
+import Home from './Routing/Home'
+import Services from './Routing/Services'
+import Contat from './Routing/Contat'
+import WebDev from './Routing/WebDev'
+import AppDev from './Routing/AppDev'
+import Blog from './Routing/Blog'
 
 export const Pass = createContext()
 export default function App() {
@@ -33,6 +42,29 @@ export default function App() {
   return (
     <div>
       
+
+      <BrowserRouter>
+          <div className="Header">
+                <Link className='r-link' to={"/"}>Home</Link>
+                <Link className='r-link' to={"/About"}>About</Link>
+                <Link className='r-link' to={"/Services"}>Services</Link>
+                <Link className='r-link' to={"/Contact"}>Contact</Link>
+          </div>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/About' element={<About/>}/>
+            <Route path='/Services' element={<Services/>}>
+                  <Route path='Webdevelopment' element={<WebDev/>}/>
+                  <Route path='Appdevelopment' element={<AppDev/>}/>
+            </Route>
+            <Route path='/Contact' element={<Contat/>}/>
+            <Route path='/blogs/:id' element={<Blog/>}/>
+          </Routes>
+      
+      </BrowserRouter>
+
+
+      {/* <UseCallBack/> */}
       {/* <FormReducer/>
       <UsReducerCount/> */}
       {/* <MultiSelectCheckbox/> */}

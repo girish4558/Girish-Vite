@@ -6,8 +6,12 @@ export default function UseCallBackList({getItems}) {
     useEffect(()=>{
         setitems(getItems())
     },[getItems])
+
+    // let styles = {
+    //   padd
+    // }
   return (
-    <div>
+    <div className='CallbackList'>
       {items.map((item)=>(
         <div key={item}>{item}</div>
       ))}

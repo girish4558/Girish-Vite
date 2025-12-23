@@ -193,3 +193,154 @@ h3{
   background-color: aqua;
   cursor: pointer;
 }
+
+.UseCall input{
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.UseCall button{
+  padding: 20px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.UseCall h1{
+  margin: 30px auto;
+  font-size: 40px;
+  color: aliceblue;
+}
+.CallbackList{
+  margin-top: 20px;
+  padding: 30px;
+  font-size: 25px;
+  background-color: gray;
+  width: 350px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #6a6565;
+}
+.Header{
+  width: 100%;
+  height: 10vh;
+  background: aqua;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.Header .r-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.Web{
+  width: 100%;
+  margin: 50px auto;
+}
+
+.Web h1{
+  width: 100%;
+  margin: auto;
+}
+
+h1{
+  color: #fff;
+}
+
+.Web img{
+  width: 100%;
+  margin: 30px auto;
+  height: 60vh;
+}
+
+.items{
+  margin: 20px 0;
+}
+
+.items ul{
+  padding: 30px;
+  background: aqua;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.items ul li{
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.i-link{
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+.ChatApp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 800px;
+  background: aqua;
+  height: 60vh;
+  border-radius: 30px ;
+}
+
+.chat{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.chat h1{
+  color: black;
+}
+
+.chat textarea,input,button{
+  padding: 15px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.chat input,button{
+  cursor: pointer;
+  
+}
+
+.chat textarea::placeholder{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.data{
+  margin: 20px 40px;
+}
+
+.data h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.data ul li{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
