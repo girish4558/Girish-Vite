@@ -1,0 +1,3 @@
+## Axios install- npm install axios
+
+if we are used this axios it directly conver the json() data into object
