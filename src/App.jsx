@@ -30,6 +30,7 @@ import Contat from './Routing/Contat'
 import WebDev from './Routing/WebDev'
 import AppDev from './Routing/AppDev'
 import Blog from './Routing/Blog'
+import Game from './XO-Game/Game'
 
 export const Pass = createContext()
 export default function App() {
@@ -41,9 +42,9 @@ export default function App() {
   const age = 30
   return (
     <div>
-      
+      <Game/>
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
           <div className="Header">
                 <Link className='r-link' to={"/"}>Home</Link>
                 <Link className='r-link' to={"/About"}>About</Link>
@@ -61,7 +62,7 @@ export default function App() {
             <Route path='/blogs/:id' element={<Blog/>}/>
           </Routes>
       
-      </BrowserRouter>
+      </BrowserRouter> */}
 
 
       {/* <UseCallBack/> */}
